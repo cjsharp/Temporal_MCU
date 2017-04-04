@@ -11,13 +11,13 @@
 #define f (256-FOSC/24/11175)	//11175Hz
 #define g (256-FOSC/24/12544)	//12544Hz 
 
-bit set_settings=1;
+bit set_settings=0;
 bit startbit=0;
 bit correctflag=1;
 bit busy;					//bit used in uart interrupt
 bit target=0;				//target bit used to tell if song is target=1/nontarget=0
 bit receive_settings=0;
-bit pause=0;
+bit pause=1;
 bit leftdripflag=0;
 bit rightdripflag=0;
 bit lickdoesntcount=0;
